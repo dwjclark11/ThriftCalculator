@@ -22,4 +22,11 @@ Or you can build them from source: [Thrift Source](https://github.com/apache/thr
 
 ### Thrift Compiler
 * You can get the thrift compiler from here: [Thrift Download](https://thrift.apache.org/download)
+* Once you have the ```thrift.exe```, put in in a good location like ```C:\thrift\thrift.exe```
+* Then you are going to want to set the path as a system variable so you can call thrift from any CMD Line
 
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/aada7099-5103-43ab-b726-a30cf15f02fc)
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/a681cf0f-1b82-4c84-9e24-d3ad1710de43)
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/b2db280c-d32c-4d1b-bc44-ea72e255ce05)
+
+* Once the path is set, in Visual Studio we can now set the ```Custom Build Tool``` for the thrift files.
