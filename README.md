@@ -1,6 +1,6 @@
 # ThriftCalculator
 Fun little calculator that uses Thrift, Imgui, Glad, and SDL. 
-This is basically an extended version of the [C++ Thrift Calculator tutorial][https://thrift.apache.org/tutorial/cpp.html] to gain a better understanding of how to 
+This is basically an extended version of the [C++ Thrift Calculator tutorial](https://thrift.apache.org/tutorial/cpp.html) to gain a better understanding of how to 
 use thrift with a GUI appilication.
 
 The client in this case is the Calculator, using ImGui, GLAD, and SDL to create the required buttons, window, etc. The server side does all the calculations. 
@@ -18,8 +18,8 @@ If you have vcpkg you can install the required thirft libraries with the followi
 
 * ```vcpkg install thrift:x64-windows```
 
-Or you can build them from source: [Thrift Source][https://github.com/apache/thrift/releases]
+Or you can build them from source: [Thrift Source](https://github.com/apache/thrift/releases)
 
 ### Thrift Compiler
-* You can get the thrift compiler from here: [Thrift Download][https://thrift.apache.org/download]
+* You can get the thrift compiler from here: [Thrift Download](https://thrift.apache.org/download)
 
