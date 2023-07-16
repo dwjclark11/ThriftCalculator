@@ -1,11 +1,16 @@
 # ThriftCalculator
 Fun little calculator that uses Thrift, Imgui, Glad, and SDL. 
-This is basically an extended version of the [C++ Thrift Calculator tutorial](https://thrift.apache.org/tutorial/cpp.html) to gain a better understanding of how to 
-use thrift with a GUI appilication.
+This is basically an extended version of the [C++ Thrift Calculator tutorial](https://thrift.apache.org/tutorial/cpp.html) to gain a better understanding of how to use thrift with a GUI appilication.
+
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/85fc21de-ab2e-457d-ad2d-8ee180968524)
+
 
 The client in this case is the Calculator, using ImGui, GLAD, and SDL to create the required buttons, window, etc. The server side does all the calculations. 
 When the ```=``` is pushed, a call is made to the server to calculate the chosen numbers. The ```Server``` and ```Client``` are their own separate programs. 
 The server must be running in order to get the client to work. 
+
+The calculator is only a simple calculator and is only to demonstrate the client-server relationship using thrift. It can definitely be extended to add more functionalities, etc.
+
 
 ## Requirements
 * GLAD
@@ -37,3 +42,8 @@ Or you can build them from source: [Thrift Source](https://github.com/apache/thr
 
 You can change the CMD Line arguments to something like below:
 ```C:\thrift\thrift.exe -gen cpp -o .  $(ProjectDir)thrift\%(Filename)%(Extension)``` -- Use your filepath for thrift.
+
+### Build
+* Once the above requirements have been set, you should be able to build the VS sln.
+* If everything builds successfully, go to the build folder and run the ```Server.exe```. If the server is not running when trying to run the Client Calculator, the client will fail to run.
+* Once the server is running, you can now locally run the visual studio solution and use the calculator.
