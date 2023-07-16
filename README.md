@@ -33,15 +33,13 @@ Or you can build them from source: [Thrift Source](https://github.com/apache/thr
 * Then you are going to want to set the path as a system variable so you can call thrift from any CMD Line
 
 ![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/150fd1f0-0202-429b-bfc0-20cbf4a1c305)
-
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/31f9bd97-c728-45ac-86f8-9ec81238ba5c)
+![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/cec38033-ba82-47fa-9eba-634f3499dfff)
 
 * If the path is not set, in Visual Studio the ```Custom Build Tool``` for the thrift files will have to be changed to accommodate where your thrift compiler is located.
 * Go to the properties of the ```calculator.thrift``` file and adjust the command line arguments to use the path where your thrift compiler is located
 
 ![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/906e6a09-3e7b-402a-bbe3-13aff9ff2e54)
-![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/31f9bd97-c728-45ac-86f8-9ec81238ba5c)
-![image](https://github.com/dwjclark11/ThriftCalculator/assets/63356975/cec38033-ba82-47fa-9eba-634f3499dfff)
-
 
 You can change the CMD Line arguments to something like below:
 ```C:\thrift\thrift.exe -gen cpp -o .  $(ProjectDir)thrift\%(Filename)%(Extension)``` -- Use your filepath for thrift.
